@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "source_revision": "f06c4076c5352252d1dbab91ae3afa28037f466c",
+  "lean": "4.24.0",
+  "mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "exit_code": 0,
+  "seconds": 203.97,
+  "sha256": "40f4cbf2ccaefa5d84fc44ece63d1e4c3fed3e47b631057ef337fc92465d7b9f",
+  "output": "'Erdos728b.erdos_728' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Erdos728b.erdos_728_fc' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "checked_theorems": [
+    "Erdos728b.erdos_728",
+    "Erdos728b.erdos_728_fc"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

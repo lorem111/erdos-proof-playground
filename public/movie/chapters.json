@@ -1,0 +1,240 @@
+{
+  "duration": 202.770876,
+  "voice": "Samantha (macOS synthetic narration)",
+  "chapters": [
+    {
+      "title": "Three empty boxes. Six locked doors.",
+      "short": "The mission",
+      "line": 1377,
+      "code": "∃ a b n : ℕ, ...",
+      "sentences": [
+        "Our story starts with three empty boxes: a, b, and n. We have to put whole numbers inside them.",
+        "But any old numbers will not do. There are six locked doors. Each door is a requirement, and each needs its own piece of evidence.",
+        "One door asks for factorial division with no remainder. Two others put limits on the extra amount, a plus b minus n.",
+        "Keep those doors in mind. We will build the numbers first, then bring back the evidence that opens them."
+      ],
+      "start": 0,
+      "cues": [
+        {
+          "start": 0,
+          "end": 6.934521,
+          "text": "Our story starts with three empty boxes: a, b, and n. We have to put whole numbers inside them."
+        },
+        {
+          "start": 6.934521,
+          "end": 15.326959,
+          "text": "But any old numbers will not do. There are six locked doors. Each door is a requirement, and each needs its own piece of evidence."
+        },
+        {
+          "start": 15.326959,
+          "end": 23.520938,
+          "text": "One door asks for factorial division with no remainder. Two others put limits on the extra amount, a plus b minus n."
+        },
+        {
+          "start": 23.520938,
+          "end": 30.864980000000003,
+          "text": "Keep those doors in mind. We will build the numbers first, then bring back the evidence that opens them."
+        }
+      ],
+      "end": 30.864980000000003
+    },
+    {
+      "title": "First, leave room on both sides.",
+      "short": "Choose c",
+      "line": 1386,
+      "code": "set c := (C + C') / 2 with hc_def",
+      "sentences": [
+        "We are given a positive lower limit, capital C, and a larger upper limit, C prime.",
+        "Send both into the average machine. Out comes little c: add the two limits, then divide by two.",
+        "Little c sits strictly between them. The code checks both inequalities. That gives our construction room on both sides."
+      ],
+      "start": 30.864980000000003,
+      "cues": [
+        {
+          "start": 30.864980000000003,
+          "end": 37.305980000000005,
+          "text": "We are given a positive lower limit, capital C, and a larger upper limit, C prime."
+        },
+        {
+          "start": 37.305980000000005,
+          "end": 44.269709000000006,
+          "text": "Send both into the average machine. Out comes little c: add the two limits, then divide by two."
+        },
+        {
+          "start": 44.269709000000006,
+          "end": 53.11856300000001,
+          "text": "Little c sits strictly between them. The code checks both inequalities. That gives our construction room on both sides."
+        }
+      ],
+      "end": 53.11856300000001
+    },
+    {
+      "title": "Five promises. One number that works.",
+      "short": "Five promises",
+      "line": 1390,
+      "code": "obtain ⟨M, hM⟩",
+      "sentences": [
+        "Next come five helpers. Each says: I can help, but only when M is big enough.",
+        "The code adds their five thresholds, plus two. Watch this choice of M pass every checkpoint. All five promises now apply together.",
+        "Obtain hands us two things: the number M, and a receipt called h M. In Lean, that receipt is the proof that all five requirements hold."
+      ],
+      "start": 53.11856300000001,
+      "cues": [
+        {
+          "start": 53.11856300000001,
+          "end": 59.25058400000001,
+          "text": "Next come five helpers. Each says: I can help, but only when M is big enough."
+        },
+        {
+          "start": 59.25058400000001,
+          "end": 68.428334,
+          "text": "The code adds their five thresholds, plus two. Watch this choice of M pass every checkpoint. All five promises now apply together."
+        },
+        {
+          "start": 68.428334,
+          "end": 78.19831300000001,
+          "text": "Obtain hands us two things: the number M, and a receipt called h M. In Lean, that receipt is the proof that all five requirements hold."
+        }
+      ],
+      "end": 78.19831300000001
+    },
+    {
+      "title": "Someone has to survive.",
+      "short": "The survivor",
+      "line": 1403,
+      "code": "obtain ⟨ m, hm ⟩ := hM.2.2.2.2.2;",
+      "sentences": [
+        "One promise gives us a good candidate between M and twice M. Here is a small pretend crowd to picture the argument.",
+        "Bad candidates turn red and drop away. The counting lemma proves there are fewer bad candidates than there are places in the interval.",
+        "So they cannot all disappear. At least one survives. We call a survivor m.",
+        "Obtain brings m forward with its evidence, h m. This illustrates an existence proof; Lean is not testing the little tiles on screen."
+      ],
+      "start": 78.19831300000001,
+      "cues": [
+        {
+          "start": 78.19831300000001,
+          "end": 85.300959,
+          "text": "One promise gives us a good candidate between M and twice M. Here is a small pretend crowd to picture the argument."
+        },
+        {
+          "start": 85.300959,
+          "end": 93.263834,
+          "text": "Bad candidates turn red and drop away. The counting lemma proves there are fewer bad candidates than there are places in the interval."
+        },
+        {
+          "start": 93.263834,
+          "end": 99.008522,
+          "text": "So they cannot all disappear. At least one survives. We call a survivor m."
+        },
+        {
+          "start": 99.008522,
+          "end": 108.709668,
+          "text": "Obtain brings m forward with its evidence, h m. This illustrates an existence proof; Lean is not testing the little tiles on screen."
+        }
+      ],
+      "end": 108.709668
+    },
+    {
+      "title": "Now watch why these numbers work.",
+      "short": "The cancellation",
+      "line": 1404,
+      "code": "use m + k_val c M, m, 2 * m;",
+      "sentences": [
+        "Remember our empty boxes? Use fills them. Put m plus k into a, m into b, and two copies of m into n.",
+        "The yellow piece k is c times the natural logarithm of M, rounded down. Earlier lemmas already give us bounds on it.",
+        "Now build the extra amount: a plus b minus n. Substitute the colored pieces from our boxes.",
+        "One positive m cancels one negative m. The second pair cancels too. What survives? Just k. That is the trick: the gap becomes something we already control."
+      ],
+      "start": 108.709668,
+      "cues": [
+        {
+          "start": 108.709668,
+          "end": 117.02627199999999,
+          "text": "Remember our empty boxes? Use fills them. Put m plus k into a, m into b, and two copies of m into n."
+        },
+        {
+          "start": 117.02627199999999,
+          "end": 125.05462599999998,
+          "text": "The yellow piece k is c times the natural logarithm of M, rounded down. Earlier lemmas already give us bounds on it."
+        },
+        {
+          "start": 125.05462599999998,
+          "end": 131.44197999999997,
+          "text": "Now build the extra amount: a plus b minus n. Substitute the colored pieces from our boxes."
+        },
+        {
+          "start": 131.44197999999997,
+          "end": 142.99368799999996,
+          "text": "One positive m cancels one negative m. The second pair cancels too. What survives? Just k. That is the trick: the gap becomes something we already control."
+        }
+      ],
+      "end": 142.99368799999996
+    },
+    {
+      "title": "Bring the evidence back to the doors.",
+      "short": "Unlock the goals",
+      "line": 1411,
+      "code": "refine' ⟨ by linarith, _, _, this.2.2.2.2.1, this.2.2.2.2.2, _ ⟩;",
+      "sentences": [
+        "The boxes are filled, but the six doors are still locked. Choosing numbers does not automatically prove they work.",
+        "The construction lemma brings evidence for factorial divisibility and other bounds. Watch that evidence travel to the requirements it proves.",
+        "Refine organizes the evidence into six slots. Linarith and nlinarith use the known facts to finish the remaining inequalities.",
+        "Every requirement now has a proof. All six doors open. There is nothing left to fill in."
+      ],
+      "start": 142.99368799999996,
+      "cues": [
+        {
+          "start": 142.99368799999996,
+          "end": 150.04681299999996,
+          "text": "The boxes are filled, but the six doors are still locked. Choosing numbers does not automatically prove they work."
+        },
+        {
+          "start": 150.04681299999996,
+          "end": 158.81820899999997,
+          "text": "The construction lemma brings evidence for factorial divisibility and other bounds. Watch that evidence travel to the requirements it proves."
+        },
+        {
+          "start": 158.81820899999997,
+          "end": 167.11160499999997,
+          "text": "Refine organizes the evidence into six slots. Linarith and nlinarith use the known facts to finish the remaining inequalities."
+        },
+        {
+          "start": 167.11160499999997,
+          "end": 174.26929299999998,
+          "text": "Every requirement now has a proof. All six doors open. There is nothing left to fill in."
+        }
+      ],
+      "end": 174.26929299999998
+    },
+    {
+      "title": "The whole journey, in one view.",
+      "short": "Proof complete",
+      "line": 1419,
+      "code": "#print axioms erdos_728_fc",
+      "sentences": [
+        "We chose a middle value, made the helpers work together, took a surviving candidate, built the numbers, and supplied the evidence.",
+        "This proves the logarithmic window existence claim for epsilon between zero and one half, and positive C less than C prime.",
+        "The full source checked in Lean, with standard axioms and no sorry placeholder. We summarized the earlier number theory lemmas; those are also part of the checked proof."
+      ],
+      "start": 174.26929299999998,
+      "cues": [
+        {
+          "start": 174.26929299999998,
+          "end": 182.92781399999998,
+          "text": "We chose a middle value, made the helpers work together, took a surviving candidate, built the numbers, and supplied the evidence."
+        },
+        {
+          "start": 182.92781399999998,
+          "end": 191.19902199999999,
+          "text": "This proves the logarithmic window existence claim for epsilon between zero and one half, and positive C less than C prime."
+        },
+        {
+          "start": 191.19902199999999,
+          "end": 202.770876,
+          "text": "The full source checked in Lean, with standard axioms and no sorry placeholder. We summarized the earlier number theory lemmas; those are also part of the checked proof."
+        }
+      ],
+      "end": 202.770876
+    }
+  ]
+}

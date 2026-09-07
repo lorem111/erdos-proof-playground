@@ -1,0 +1,14 @@
+.git
+node_modules
+.next
+.film-cache
+.vinext
+.wrangler
+coverage
+*.log
+public/movie/**/*.mp4
+public/movie/**/*.mp3
+public/movie/**/*.wav
+public/movie/*.mp4
+public/movie/*.mp3
+public/movie/*.wav

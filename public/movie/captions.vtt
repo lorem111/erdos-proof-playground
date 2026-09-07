@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.935
+Our story starts with three empty boxes: a, b, and n. We have to put whole numbers inside them.
+
+00:00:06.935 --> 00:00:15.327
+But any old numbers will not do. There are six locked doors. Each door is a requirement, and each needs its own piece of evidence.
+
+00:00:15.327 --> 00:00:23.521
+One door asks for factorial division with no remainder. Two others put limits on the extra amount, a plus b minus n.
+
+00:00:23.521 --> 00:00:30.865
+Keep those doors in mind. We will build the numbers first, then bring back the evidence that opens them.
+
+00:00:30.865 --> 00:00:37.306
+We are given a positive lower limit, capital C, and a larger upper limit, C prime.
+
+00:00:37.306 --> 00:00:44.270
+Send both into the average machine. Out comes little c: add the two limits, then divide by two.
+
+00:00:44.270 --> 00:00:53.119
+Little c sits strictly between them. The code checks both inequalities. That gives our construction room on both sides.
+
+00:00:53.119 --> 00:00:59.251
+Next come five helpers. Each says: I can help, but only when M is big enough.
+
+00:00:59.251 --> 00:01:08.428
+The code adds their five thresholds, plus two. Watch this choice of M pass every checkpoint. All five promises now apply together.
+
+00:01:08.428 --> 00:01:18.198
+Obtain hands us two things: the number M, and a receipt called h M. In Lean, that receipt is the proof that all five requirements hold.
+
+00:01:18.198 --> 00:01:25.301
+One promise gives us a good candidate between M and twice M. Here is a small pretend crowd to picture the argument.
+
+00:01:25.301 --> 00:01:33.264
+Bad candidates turn red and drop away. The counting lemma proves there are fewer bad candidates than there are places in the interval.
+
+00:01:33.264 --> 00:01:39.009
+So they cannot all disappear. At least one survives. We call a survivor m.
+
+00:01:39.009 --> 00:01:48.710
+Obtain brings m forward with its evidence, h m. This illustrates an existence proof; Lean is not testing the little tiles on screen.
+
+00:01:48.710 --> 00:01:57.026
+Remember our empty boxes? Use fills them. Put m plus k into a, m into b, and two copies of m into n.
+
+00:01:57.026 --> 00:02:05.055
+The yellow piece k is c times the natural logarithm of M, rounded down. Earlier lemmas already give us bounds on it.
+
+00:02:05.055 --> 00:02:11.442
+Now build the extra amount: a plus b minus n. Substitute the colored pieces from our boxes.
+
+00:02:11.442 --> 00:02:22.994
+One positive m cancels one negative m. The second pair cancels too. What survives? Just k. That is the trick: the gap becomes something we already control.
+
+00:02:22.994 --> 00:02:30.047
+The boxes are filled, but the six doors are still locked. Choosing numbers does not automatically prove they work.
+
+00:02:30.047 --> 00:02:38.818
+The construction lemma brings evidence for factorial divisibility and other bounds. Watch that evidence travel to the requirements it proves.
+
+00:02:38.818 --> 00:02:47.112
+Refine organizes the evidence into six slots. Linarith and nlinarith use the known facts to finish the remaining inequalities.
+
+00:02:47.112 --> 00:02:54.269
+Every requirement now has a proof. All six doors open. There is nothing left to fill in.
+
+00:02:54.269 --> 00:03:02.928
+We chose a middle value, made the helpers work together, took a surviving candidate, built the numbers, and supplied the evidence.
+
+00:03:02.928 --> 00:03:11.199
+This proves the logarithmic window existence claim for epsilon between zero and one half, and positive C less than C prime.
+
+00:03:11.199 --> 00:03:22.771
+The full source checked in Lean, with standard axioms and no sorry placeholder. We summarized the earlier number theory lemmas; those are also part of the checked proof.

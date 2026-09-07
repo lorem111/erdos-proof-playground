@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.656
+Three mystery numbers. Six checks. Can we make every light turn green?
+
+00:00:04.656 --> 00:00:09.140
+One check means a perfect fit: divide, with nothing left over.
+
+00:00:09.140 --> 00:00:13.948
+First, pick a middle setting. Now we've got wiggle room on both sides.
+
+00:00:13.948 --> 00:00:18.546
+Five helpers need a big enough number. Crank it up until every helper is ready.
+
+00:00:18.546 --> 00:00:22.254
+Now we get the number, plus proof that all five are ready.
+
+00:00:22.254 --> 00:00:27.780
+The bad candidates get knocked out. But the proof says there aren't enough bad ones to remove everybody.
+
+00:00:27.780 --> 00:00:31.742
+Someone survives. Take that number, and its proof.
+
+00:00:31.742 --> 00:00:36.448
+Build our three numbers from these pieces. Now add the first two and subtract the third.
+
+00:00:36.448 --> 00:00:43.418
+Blue cancels blue. Again. What's left? Just the yellow piece. That's the gap we needed to control.
+
+00:00:43.418 --> 00:00:46.835
+Building the numbers isn't enough. Each check needs evidence.
+
+00:00:46.835 --> 00:00:52.279
+The earlier lemmas bring the receipts. Lean checks every one. Six green lights.
+
+00:00:52.279 --> 00:00:57.396
+That's the idea: build numbers so the gap becomes simple, then prove every requirement.
+
+00:00:57.396 --> 00:01:01.623
+The full proof checked in Lean. The deeper lemmas are summarized here.

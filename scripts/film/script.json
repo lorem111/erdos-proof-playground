@@ -1,0 +1,41 @@
+[
+  {"title":"Three empty boxes. Six locked doors.","short":"The mission","line":1377,"code":"∃ a b n : ℕ, ...","sentences":[
+    "Our story starts with three empty boxes: a, b, and n. We have to put whole numbers inside them.",
+    "But any old numbers will not do. There are six locked doors. Each door is a requirement, and each needs its own piece of evidence.",
+    "One door asks for factorial division with no remainder. Two others put limits on the extra amount, a plus b minus n.",
+    "Keep those doors in mind. We will build the numbers first, then bring back the evidence that opens them."
+  ]},
+  {"title":"First, leave room on both sides.","short":"Choose c","line":1386,"code":"set c := (C + C') / 2 with hc_def","sentences":[
+    "We are given a positive lower limit, capital C, and a larger upper limit, C prime.",
+    "Send both into the average machine. Out comes little c: add the two limits, then divide by two.",
+    "Little c sits strictly between them. The code checks both inequalities. That gives our construction room on both sides."
+  ]},
+  {"title":"Five promises. One number that works.","short":"Five promises","line":1390,"code":"obtain ⟨M, hM⟩","sentences":[
+    "Next come five helpers. Each says: I can help, but only when M is big enough.",
+    "The code adds their five thresholds, plus two. Watch this choice of M pass every checkpoint. All five promises now apply together.",
+    "Obtain hands us two things: the number M, and a receipt called h M. In Lean, that receipt is the proof that all five requirements hold."
+  ]},
+  {"title":"Someone has to survive.","short":"The survivor","line":1403,"code":"obtain ⟨ m, hm ⟩ := hM.2.2.2.2.2;","sentences":[
+    "One promise gives us a good candidate between M and twice M. Here is a small pretend crowd to picture the argument.",
+    "Bad candidates turn red and drop away. The counting lemma proves there are fewer bad candidates than there are places in the interval.",
+    "So they cannot all disappear. At least one survives. We call a survivor m.",
+    "Obtain brings m forward with its evidence, h m. This illustrates an existence proof; Lean is not testing the little tiles on screen."
+  ]},
+  {"title":"Now watch why these numbers work.","short":"The cancellation","line":1404,"code":"use m + k_val c M, m, 2 * m;","sentences":[
+    "Remember our empty boxes? Use fills them. Put m plus k into a, m into b, and two copies of m into n.",
+    "The yellow piece k is c times the natural logarithm of M, rounded down. Earlier lemmas already give us bounds on it.",
+    "Now build the extra amount: a plus b minus n. Substitute the colored pieces from our boxes.",
+    "One positive m cancels one negative m. The second pair cancels too. What survives? Just k. That is the trick: the gap becomes something we already control."
+  ]},
+  {"title":"Bring the evidence back to the doors.","short":"Unlock the goals","line":1411,"code":"refine' ⟨ by linarith, _, _, this.2.2.2.2.1, this.2.2.2.2.2, _ ⟩;","sentences":[
+    "The boxes are filled, but the six doors are still locked. Choosing numbers does not automatically prove they work.",
+    "The construction lemma brings evidence for factorial divisibility and other bounds. Watch that evidence travel to the requirements it proves.",
+    "Refine organizes the evidence into six slots. Linarith and nlinarith use the known facts to finish the remaining inequalities.",
+    "Every requirement now has a proof. All six doors open. There is nothing left to fill in."
+  ]},
+  {"title":"The whole journey, in one view.","short":"Proof complete","line":1419,"code":"#print axioms erdos_728_fc","sentences":[
+    "We chose a middle value, made the helpers work together, took a surviving candidate, built the numbers, and supplied the evidence.",
+    "This proves the logarithmic window existence claim for epsilon between zero and one half, and positive C less than C prime.",
+    "The full source checked in Lean, with standard axioms and no sorry placeholder. We summarized the earlier number theory lemmas; those are also part of the checked proof."
+  ]}
+]

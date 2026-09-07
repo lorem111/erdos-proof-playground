@@ -1,0 +1,34 @@
+{
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "sha256": "25a4d77d4817a261f90d88cdfdba154c61545b3ab42dcf281e0d3fe421f76a08",
+  "axiomFree": true,
+  "states": [
+    {
+      "line": 1,
+      "text": "A B : Prop\nh : A ∧ B\n⊢ B ∧ A",
+      "goals": [
+        "B ∧ A"
+      ]
+    },
+    {
+      "line": 2,
+      "text": "case left\nA B : Prop\nh : A ∧ B\n⊢ B\n\ncase right\nA B : Prop\nh : A ∧ B\n⊢ A",
+      "goals": [
+        "B",
+        "A"
+      ]
+    },
+    {
+      "line": 3,
+      "text": "case right\nA B : Prop\nh : A ∧ B\n⊢ A",
+      "goals": [
+        "A"
+      ]
+    },
+    {
+      "line": 4,
+      "text": "No goals.",
+      "goals": []
+    }
+  ]
+}
