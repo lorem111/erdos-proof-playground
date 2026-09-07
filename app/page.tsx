@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { proofs, sourceFor, commit } from '../lib/arcade/content';
 import Scene from './arcade-scenes';
+import verification from '../public/proofs/verification.json';
 import './arcade.css';
 const repo = 'https://github.com/lorem111/erdos-proof-playground';
 function hashState() {
@@ -66,6 +67,9 @@ export default function Home() {
     current = proof.steps[step],
     file = sourceFor(proof.id, current.file);
   const lines = file.text.split('\n');
+  const checked =
+    verification.entries.find((entry) => entry.id === proof.id)?.status ===
+    'passed';
   if (step === 3 && !visited.includes(proof.id))
     setVisited([...visited, proof.id]);
   useEffect(() => {
@@ -489,7 +493,10 @@ export default function Home() {
           )}
           <div className="proof-footer">
             <span>
-              <Check size={14} /> Original proof source included
+              <Check size={14} />{' '}
+              {checked
+                ? 'Lean checked · no sorry'
+                : 'Original proof source included'}
             </span>
             <span>
               Illustrated source walkthrough · JS examples, not a live Lean
@@ -525,6 +532,12 @@ export default function Home() {
                 with Erdős Problems or the Lean project.
               </p>
               <p id="verification-note">
+                {checked && (
+                  <strong>
+                    This proof compiled locally with Lean 4.33.0, with no
+                    sorryAx in its printed axiom dependencies.{' '}
+                  </strong>
+                )}
                 The browser uses independently tested JavaScript examples. Lean
                 verification results and exact reproduction instructions are in
                 the{' '}
@@ -536,6 +549,9 @@ export default function Home() {
               </p>
               <a href={`/proofs/${sourceFor(proof.id).path}`} download>
                 <Download size={14} /> Download main Lean file
+              </a>
+              <a href="/proofs/ten-erdos-proofs.zip" download>
+                <Download size={14} /> All ten proofs (.zip)
               </a>
               {proof.id === 231 && (
                 <a href="/proofs/ErdosProblems/Erdos231/Proof.lean" download>

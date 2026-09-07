@@ -1,5 +1,7 @@
 # Small Proofs
 
+**[Open the public site](https://erdos-proof-playground.vercel.app/)** · [Download all ten proofs](https://erdos-proof-playground.vercel.app/proofs/ten-erdos-proofs.zip) · [GitHub](https://github.com/lorem111/erdos-proof-playground)
+
 Ten real Erdős proofs, explained through forty interactive browser-animation steps and the actual Lean source. React + TypeScript + Vite; runs with normal local npm. No backend or API keys.
 
 ## Run
@@ -59,6 +61,10 @@ Scope caveats are visible under each walkthrough:
 ```sh
 npm test
 npm run build
+# With the dev server running (Chrome installed):
+npm run test:browser
+# Or check the public deployment:
+APP_URL=https://erdos-proof-playground.vercel.app npm run test:browser
 ```
 
 The tests check exact arithmetic, positive controls for the word scanner, every packing and hypergraph case, large integer identities, and source hashes. UI source: `app/page.tsx`, `app/arcade-scenes.tsx`, `app/arcade.css`. Story content: `lib/arcade/content.ts`. Example calculations: `lib/arcade/math.ts`.

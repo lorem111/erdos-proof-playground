@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=22.13.0"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -17,7 +17,8 @@
     "film:audio": "node scripts/film/audio.mjs",
     "film:render": "node scripts/film/render.mjs",
     "film:quick:audio": "node scripts/film/audio.mjs --quick && node scripts/quick/sound.mjs",
-    "film:quick:render": "node scripts/film/render.mjs --quick"
+    "film:quick:render": "node scripts/film/render.mjs --quick",
+    "test:browser": "node scripts/check-browser.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
