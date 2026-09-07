@@ -669,7 +669,7 @@ function Cancellation({ step }: Props) {
           <hr />
           <div>
             {['2', '2a+1', 'a+1', '2a+1', '4a+1', '4a+3'].map((v, i) => (
-              <span key={i} style={delay(factors.indexOf(v))}>
+              <span key={i} style={delay([1, 4, 0, 5, 3, 2][i])}>
                 {v}
               </span>
             ))}

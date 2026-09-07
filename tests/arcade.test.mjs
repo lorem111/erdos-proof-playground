@@ -122,3 +122,30 @@ test('downloaded source hashes are intact and contain no proof holes', async () 
       );
     }
 });
+
+test('published verification report covers all ten exact sources with no proof-hole axioms', () => {
+  const report = JSON.parse(
+    fs.readFileSync('public/proofs/verification.json', 'utf8'),
+  );
+  const manifest = JSON.parse(
+    fs.readFileSync('public/proofs/manifest.json', 'utf8'),
+  );
+  assert.equal(report.status, 'passed');
+  assert.equal(report.upstreamCommit, manifest[0].upstreamCommit);
+  assert.deepEqual(
+    report.entries.map((e) => e.id),
+    manifest.map((e) => e.id),
+  );
+  for (const entry of report.entries) {
+    assert.equal(entry.status, 'passed');
+    assert.equal(entry.exitCode, 0);
+    assert.ok(entry.axiomReports.length > 0);
+    assert.ok(
+      entry.axiomReports.every((r) =>
+        r.axioms.every((a) =>
+          ['propext', 'Classical.choice', 'Quot.sound'].includes(a),
+        ),
+      ),
+    );
+  }
+});

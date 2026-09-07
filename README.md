@@ -38,7 +38,7 @@ These are illustrated source walkthroughs, not a Lean interpreter inside the bro
 
 The source is pinned to [plby/lean-proofs](https://github.com/plby/lean-proofs/tree/f06c4076c5352252d1dbab91ae3afa28037f466c), commit `f06c4076c5352252d1dbab91ae3afa28037f466c`, using Lean/Mathlib 4.33.0. Eleven original `.lean` files (ten main files plus #231's helper) are in `public/proofs/ErdosProblems/`. Original author and license notices are preserved. This educational app is independent of the upstream authors, Erdős Problems, and the Lean project.
 
-Read [`public/proofs/verification.json`](public/proofs/verification.json) for the local compilation report. Reproduce it with an installed [elan](https://github.com/leanprover/elan):
+**All ten included formal statements passed local Lean 4.33.0 checking.** Their printed axiom dependencies contain no `sorryAx`; the copied sources contain no `sorry`, `admit`, or `native_decide`. Read [`public/proofs/verification.json`](public/proofs/verification.json) for the recorded commands, compiler output, and exact scope. Reproduce it with an installed [elan](https://github.com/leanprover/elan):
 
 ```sh
 cp -R public/proofs/ErdosProblems verification/
@@ -75,4 +75,4 @@ The tests check exact arithmetic, positive controls for the word scanner, every 
 
 The app is configured for Vercel's Vite framework. Import this repository into Vercel or run `npx vercel --prod`. No environment variables are required. The production branch is `main`.
 
-Earlier local swap, #728, and film experiments remain in the repository for continuity; they are not the collection's homepage. See `docs/earlier-experiments.md`. Large rendered film assets are excluded from Vercel uploads.
+Earlier local swap, #728, and film experiments remain in the repository for continuity; they are not the collection's homepage. See `docs/earlier-experiments.md`. The collection homepage does not load the earlier film assets.

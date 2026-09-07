@@ -1,11 +1,11 @@
 {
-  "status": "in_progress",
-  "checkedAt": "2026-09-07T02:37:04.729118+00:00",
+  "status": "passed",
+  "checkedAt": "2026-09-07T02:49:48.069929+00:00",
   "upstream": "https://github.com/plby/lean-proofs",
   "upstreamCommit": "f06c4076c5352252d1dbab91ae3afa28037f466c",
   "lean": "4.33.0",
   "mathlibCommit": "db584cd6d46c92f209a44c0f1c829460d327499d",
-  "method": "Lake compiled the original, hash-checked source files with the pinned dependencies. Successful cached targets may be replayed. Axiom reports are actual compiler output, not source comments.",
+  "method": "Lean checked the original, hash-checked source files via the recorded Lake commands with the pinned dependencies. Successful cached targets may be replayed. Axiom reports are actual compiler output, not source comments.",
   "browser": "Interactive examples are separately implemented and tested in JavaScript. This site does not execute Lean in the browser.",
   "entries": [
     {
@@ -62,33 +62,111 @@
     },
     {
       "id": 231,
-      "status": "not_yet_checked",
-      "command": "lake build ErdosProblems.Erdos231"
+      "status": "passed",
+      "command": "lake build ErdosProblems.Erdos231",
+      "exitCode": 0,
+      "seconds": 541.28,
+      "output": "✔ [8706/8707] Built ErdosProblems.Erdos231.Proof (238s)\nℹ [8707/8707] Built ErdosProblems.Erdos231 (295s)\ninfo: ErdosProblems/Erdos231.lean:46:0: 'Erdos231.not_erdos_231' depends on axioms: [propext, Classical.choice, Quot.sound]\nBuild completed successfully (8707 jobs).\n",
+      "axiomReports": [
+        {
+          "theorem": "Erdos231.not_erdos_231",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
     },
     {
       "id": 316,
-      "status": "not_yet_checked",
-      "command": "lake build ErdosProblems.Erdos316"
+      "status": "passed",
+      "command": "lake build ErdosProblems.Erdos316",
+      "exitCode": 0,
+      "seconds": 412.62,
+      "output": "ℹ [8706/8706] Built ErdosProblems.Erdos316 (397s)\ninfo: ErdosProblems/Erdos316.lean:49:0: 'Erdos316.not_erdos_316' depends on axioms: [propext, Classical.choice, Quot.sound]\nBuild completed successfully (8706 jobs).\n",
+      "axiomReports": [
+        {
+          "theorem": "Erdos316.not_erdos_316",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
     },
     {
       "id": 692,
-      "status": "not_yet_checked",
-      "command": "lake build ErdosProblems.Erdos692"
+      "status": "passed",
+      "command": "lake build ErdosProblems.Erdos692",
+      "exitCode": 0,
+      "seconds": 75.81,
+      "output": "ℹ [1669/1669] Built ErdosProblems.Erdos692 (59s)\ninfo: ErdosProblems/Erdos692.lean:143:0: 'Erdos692.not_erdos_692' depends on axioms: [propext, Classical.choice, Quot.sound]\nBuild completed successfully (1669 jobs).\n",
+      "axiomReports": [
+        {
+          "theorem": "Erdos692.not_erdos_692",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
     },
     {
       "id": 794,
-      "status": "not_yet_checked",
-      "command": "lake build ErdosProblems.Erdos794"
+      "status": "passed",
+      "command": "lake env lean ErdosProblems/Erdos794.lean",
+      "exitCode": 0,
+      "seconds": 481.37,
+      "output": "'Erdos794.not_erdos_794' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiomReports": [
+        {
+          "theorem": "Erdos794.not_erdos_794",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
     },
     {
       "id": 397,
-      "status": "not_yet_checked",
-      "command": "lake build ErdosProblems.Erdos397"
+      "status": "passed",
+      "command": "lake build ErdosProblems.Erdos397",
+      "exitCode": 0,
+      "seconds": 363.29,
+      "output": "ℹ [8706/8706] Built ErdosProblems.Erdos397 (353s)\ninfo: ErdosProblems/Erdos397.lean:139:0: 'Erdos397.not_erdos_397' depends on axioms: [propext, Classical.choice, Quot.sound]\nBuild completed successfully (8706 jobs).\n",
+      "axiomReports": [
+        {
+          "theorem": "Erdos397.not_erdos_397",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
     },
     {
       "id": 363,
-      "status": "not_yet_checked",
-      "command": "lake build ErdosProblems.Erdos363"
+      "status": "passed",
+      "command": "lake build ErdosProblems.Erdos363",
+      "exitCode": 0,
+      "seconds": 286.08,
+      "output": "ℹ [8706/8706] Built ErdosProblems.Erdos363 (276s)\ninfo: ErdosProblems/Erdos363.lean:203:0: 'Erdos363.not_erdos_363' depends on axioms: [propext, Classical.choice, Quot.sound]\nBuild completed successfully (8706 jobs).\n",
+      "axiomReports": [
+        {
+          "theorem": "Erdos363.not_erdos_363",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
     },
     {
       "id": 645,

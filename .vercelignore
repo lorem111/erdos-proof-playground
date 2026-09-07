@@ -12,3 +12,6 @@ public/movie/**/*.wav
 public/movie/*.mp4
 public/movie/*.mp3
 public/movie/*.wav
+.env*
+.DS_Store
+verification/.lake

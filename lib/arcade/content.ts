@@ -114,7 +114,7 @@ export const proofs: Proof[] = [
     steps: [
       s(
         'Open the box',
-        'The definition counts pairs that add to n. It tries every first number from 0 through n.',
+        'The definition counts ordered pairs that add to n. It tries every first number from 0 through n.',
         '“range (n + 1)” includes zero and stops at n: that is n + 1 candidates.',
         [55, 57],
         'k = 0, 1, …, n',
